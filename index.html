@@ -8,35 +8,71 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <body ng-app="myApp">
+    <nav class="navbar navbar-expand-sm fixed-top bg-light navbar-light">
   <ul class="navbar-nav">
     <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="#"><b>Top 10</b></a></li>
-    <li class="nav-item"><a class="nav-link" href="#">World Map</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="#!top"><b>Top 10</b></a></li>
+    <li class="nav-item"><a class="nav-link" href="#!worldmap">World Map</a></li>
+    <li class="nav-item"><a class="nav-link" href="#!findplace">Find Place</a></li>
+    <li class="nav-item"><a class="nav-link" href="#!aboutus">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="#!contactus">Contact Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="#!livechat">Live Chat</a></li>
   </ul>
 </nav>
-<div class="parallax1"></div>
 
-<div style="height:1000px;background-color:gray;font-size:36px">
-  <p>Hi its paralox</p>
-</div>
+<div class="ng-view"></div>
 
-<div class="parallax2"></div>
+<footer class="page-footer font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-3" style="text-align:center;">
+          <h5 class="text-uppercase">Most Visited</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">1. France</a></li>
+            <li><a href="#!">2. United States</a></li>
+            <li><a href="#!">3. Spain</a></li>
+            <li><a href="#!">4. China</a></li>
+            <li><a href="#!">5. Italy</a></li>
+            <li><a href="#!">6. Turkey</a></li>
+            <li><a href="#!">7. Germany</a></li>
+          </ul>
 
-<div style="height:1000px;background-color:gray;font-size:36px">
-  <p>Hi its paralox</p>
-</div>
+        </div>
+        <div class="col-md-6" style="text-align:center;">
+            <h5 class="text-uppercase">TravelCity</h5>
+            <p>TravelCity is a place where you will get informatation about all places all over the world.
+            <br>you get informatation about any place.
+            <br>This site is for travel lovers.</p>
+            <ul class="list-unstyled">
+              <li><a href="#!aboutus"><u>About Us</u></a></li>
+            </ul>
 
-<div class="parallax3"></div>
+          </div>
+          <div class="col-md-3" style="text-align:center;">
+            <h5 class="text-uppercase">Locations</h5>
 
-<div style="height:1000px;background-color:gray;font-size:36px">
-  <p>Hi its paralox</p>
-</div>
-
-<div class="parallax4"></div>
+            <ul class="list-unstyled">
+              <li><a href="#!">Asia</a></li>
+              <li><a href="#!">Europe</a></li>
+              <li><a href="#!">Africa</a></li>
+              <li><a href="#!">Australia</a></li>
+              <li><a href="#!">North America</a></li>
+              <li><a href="#!">South America</a></li>
+              <li><a href="#!">Antarctica</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div style="background-color:#f5f5f5;" class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://www.google.com/">TravelCity.com</a>
+      <p style="text-align:center; font-size:10px;">PROUDLY BUILT BY: Manjunatha M S</p>
+    </div>
+  </footer>
   </body>
 </html>
