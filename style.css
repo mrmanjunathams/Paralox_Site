@@ -1,6 +1,11 @@
 #hom, #menu, #catering, #contact, #loc {
   color:black;
 }
+
+p, h1,h2,h3,h4,h5,h6{
+  text-align: center;
+}
+
 nav {
   position: fixed;
 }
@@ -14,6 +19,7 @@ label{
 #block {
   font-size: 50%;
 }
+
 .parallax1 {
     background-image: url('images/img2.jpg');
     height: 100%;
@@ -70,6 +76,107 @@ label{
 
 .parallax7 {
     background-image: url('images/img6.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax8 {
+    background-image: url('images/img7.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax9 {
+    background-image: url('images/bangkok1.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax10 {
+    background-image: url('images/london.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax11 {
+    background-image: url('images/paris.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax12 {
+    background-image: url('images/dubai.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax13 {
+    background-image: url('images/singapore.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax14 {
+    background-image: url('images/tokyo.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax15 {
+    background-image: url('images/img7.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax16 {
+    background-image: url('images/img7.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax17 {
+    background-image: url('images/img7.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax18 {
+    background-image: url('images/img7.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax19 {
+    background-image: url('images/img7.jpg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;

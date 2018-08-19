@@ -18,3 +18,5 @@ app.config(function($routeProvider){
     });
 
 });
+
+var num;
