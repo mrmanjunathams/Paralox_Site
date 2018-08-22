@@ -16,6 +16,13 @@ label{
   font-size: 60%;
 }
 
+#req{
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: left;
+  font-size: 30px;
+}
+
 #block {
   font-size: 50%;
 }

@@ -9,8 +9,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
 </head>
-  <body>
+  <body ng-app="myApp">
     <div class="parallax5"><br><br><br><br><br>
       <p style="text-align:center; font-family: 'Permanent Marker', cursive; font-size: 150px; color:brown;">Contact Us</p>
       <p style="text-align:center; font-family: 'Patua One', cursive; font-size: 100px; color:black;">Today</p>
@@ -30,32 +31,32 @@
             </div>
             <div class="card-footer text-muted">
               <p><h6>Find out more places by clicking on World Map...!</h6></p>
-              <a href="#" class="btn btn-primary">World Map</a>
+              <a href="#" class="btn btn-secondary">World Map</a>
             </div>
           </div>
         </div>
         <div class="grid-item">
-          <form>
+          <form ng-controller="ContactController" type="post" name="myForm">
             <div class="form-group">
-              <label  for="name">Your Nmae(required)</label>
-              <input type="text" class="form-control" placeholder="enter name" id="name">
+              <label  for="name">Your Name(required)</label>
+              <input type="text" class="form-control" ng-model="name" placeholder="enter name" id="name">
             </div>
             <div class="form-group">
               <label for="email">Your Email(required)</label>
-              <input type="email" class="form-control" aria-describedby="emailHelp" id="email" placeholder="enter email">
+              <input type="email" class="form-control" ng-model="email" aria-describedby="emailHelp" id="email" placeholder="enter email">
               <small id="emailHelp" class="form-text text-muted" style="font-size:50%;">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label  for="Subject">Subject</label>
-              <input type="email" class="form-control" aria-describedby="emailHelp" id="Subject" placeholder="enter subject">
+              <input type="text" ng-model="subject" class="form-control" aria-describedby="emailHelp" id="Subject" placeholder="enter subject">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="5"></textarea>
+              <textarea class="form-control" ng-model="message" id="message" rows="5"></textarea>
             </div>
             <div class="form-group">
               <label for="cont">Your Place(required)</label>
-              <select class="form-control" id="cont">
+              <select class="form-control" id="cont" ng-model="place">
                 <option>Africa</option>
                 <option>Antarctica</option>
                 <option>Asia</option>
@@ -69,8 +70,8 @@
               <label  for="Spam">Spam Prevention (required)<br>Answer this question: 3 + 5 = ?</label>
               <input type="text" class="form-control" aria-describedby="emailHelp" id="Spam" placeholder="Answer">
             </div>
-            <button style="color:white; background-color: black;" type="submit" class="btn btn-primary">Send</button>
-          </form>
+            <button class="btn btn-secondary" type="submit" name="send">Send</button>
+            </form>
         </div>
       </div>
     </div>

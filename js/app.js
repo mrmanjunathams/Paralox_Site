@@ -15,8 +15,30 @@ app.config(function($routeProvider){
       templateUrl:"templets/contactus.html"
     }).when("/livechat",{
       templateUrl:"templets/livechat.html"
+    }).when("/request",{
+      templateUrl:"templets/request.html"
     });
 
 });
 
 var num;
+
+app.controller("ContactController",function($scope,$http,$location){
+  console.log("submit clicked");
+$scope.submit=function(){
+  let data={
+  "name":$scope.name,
+  "email": $scope.email,
+  "subject": $scope.subject,
+  "message":$scope.message,
+  "option":$scope.place
+}
+console.log(data);
+if($scope.email){
+  $location.path('/'+$scope.email);
+$http.post("http://localhost:3000/contactus",data).then(function(response){
+  console.log(response.data);
+});
+}
+}
+});
