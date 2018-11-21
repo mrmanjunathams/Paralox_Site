@@ -1,7 +1,26 @@
 #hom, #menu, #catering, #contact, #loc {
   color:black;
 }
-
+nav{
+    background: #ffffff;
+    color: #000;
+    position: fixed;
+}
+nav .collapse form input{
+    border-radius: 25px;
+    border: 2px solid gray;
+    color: #000;
+}
+nav .collapse form button{
+    border-radius: 25px;
+    border: 2px solid gray;
+    color: gray;
+    background: #fff;
+}
+nav .collapse form button:hover{
+    color:#fff;
+    background: gray;
+}
 p, h1,h2,h3,h4,h5,h6{
   text-align: center;
 }

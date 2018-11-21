@@ -13,8 +13,6 @@ app.config(function($routeProvider){
       templateUrl:"templets/aboutus.html"
     }).when("/contactus",{
       templateUrl:"templets/contactus.html"
-    }).when("/livechat",{
-      templateUrl:"templets/livechat.html"
     }).when("/request",{
       templateUrl:"templets/request.html"
     });

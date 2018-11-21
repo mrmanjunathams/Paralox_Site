@@ -92,7 +92,7 @@
                   return; }
                   /*          COMMAND MENU RESPONSES         */
                   else if (question === "!MENU" ) {
-                    botSays("\n\n**Commands are !Name yourName, !Bgcolor backgroundColor, !Text textColor, !Menu, !Secrets, !Tutorial, !Botsay textSays, and !Me textDoes,. Play around."); botChat.scrollTop = botChat.scrollHeight;
+                    botSays("\n\n Bot : Today top 10 places are listed in top 10."); botChat.scrollTop = botChat.scrollHeight;
                     return;
                   }else if (question.slice(0,9).includes("!BGCOLOR ") ) {
                     botSays("\n\n**Changed the background color to " + x.slice(9) ); botChat.scrollTop = botChat.scrollHeight; botChat.style.backgroundColor = x.slice(9);
